@@ -1,0 +1,34 @@
+<mapping>
+    <class  name="com.nendrasys.model.BooksList">
+        <field name="booksInfoList" type="com.nendrasys.model.BooksList" collection="arraylist" >
+            <bind-xml name="BooksList"  />
+        </field>
+    </class>
+
+    <class name="com.nendrasys.model.BooksInfo">
+        <map-to xml="BooksInfo" />
+
+        <field name="bookId" type="integer">
+            <bind-xml name="bookId" node="element" />
+        </field>
+
+        <field name="bookName" type="string">
+            <bind-xml name="bookName" node="element" />
+        </field>
+
+        <field name="bookAuthor" type="string">
+            <bind-xml name="bookAuthor" node="element" />
+        </field>
+
+        <field name="bookDesc" type="string">
+            <bind-xml name="bookDesc" node="element" />
+        </field>
+        <field name="inPrice" type="double">
+            <bind-xml name="inPrice" node="element" />
+        </field>
+
+        <field name="usPrice" type="double">
+            <bind-xml name="usPrice" node="element" />
+        </field>
+    </class>
+</mapping>
